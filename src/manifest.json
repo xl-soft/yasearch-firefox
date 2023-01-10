@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Поиск Яндекса",
+    "short_name": "yasearch",
+    "description": "Добавляет поисковой движок Яндекса",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icons/yandex.svg",
+        "64": "icons/yandex.svg",
+        "256": "icons/yandex.svg"
+    },
+    "chrome_settings_overrides": {
+        "search_provider": {
+        "name": "Яндекс",
+        "keyword": "@ya",
+        "favicon_url": "https://yastatic.net/s3/home-static/_/a6/a6a296b741b51880ae8a9b04a67cfe3f.png",
+        "search_url": "https://ya.ru/search/?text={searchTerms}"
+        }
+    },
+    "browser_specific_settings": {
+        "gecko": {
+        "id": "YaSearchExtension@typostudio.ru",
+        "strict_min_version": "55.0"
+        }
+    },
+    "author": "typostudio",
+    "homepage_url": "https://github.com/typodevstudio/yandex-search-firefox"
+}
